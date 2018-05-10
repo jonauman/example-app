@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'curl localhost:8080/admin/'
-                sh 'curl localhost:8080/api/'
+                sh 'curl localhost:80/admin/'
+                sh 'curl localhost:80/api/'
             }
         }
     }
